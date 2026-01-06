@@ -206,9 +206,13 @@ Follow the Eugene build journey:
 
 ---
 
-## 📄 License
+## License & Usage
 
-MIT License - see [LICENSE](LICENSE) file for details.
+This project is **source-available, not open source**.
+
+The code is published to demonstrate system design, architecture, and
+engineering approach. Reuse, modification, or commercial use is not
+permitted without written authorization.
 
 ---
 
