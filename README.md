@@ -6,7 +6,7 @@
 [![Personal Project](https://img.shields.io/badge/Status-Personal%20Project-orange)]()
 [![In Development](https://img.shields.io/badge/Stage-Documentation-yellow)]()
 
-Eugene is an AI-powered life management system that unifies business projects, personal tasks, family scheduling, file management, and intelligent assistance into one context-aware platform.
+Eugene is an intelligent agentic manager that coordinates multiple AI agents to manage projects, generate content, and automate workflows. Think project manager + personal assistant + content creator, powered by specialized AI agents working together..
 
 **Stop juggling multiple tools.** Eugene learns your life, suggests priorities, balances workload, and helps you stay on top of everything that matters.
 
