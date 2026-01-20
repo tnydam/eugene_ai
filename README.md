@@ -6,7 +6,7 @@
 [![Personal Project](https://img.shields.io/badge/Status-Personal%20Project-orange)]()
 [![In Development](https://img.shields.io/badge/Stage-Documentation-yellow)]()
 
-Eugene is an intelligent agentic manager that coordinates multiple AI agents to manage projects, generate content, and automate workflows. Think project manager + personal assistant + content creator, powered by specialized AI agents working together..
+Eugene is an AI-powered intellectual system that unifies project management, personal tasks, family scheduling, content creation, and intelligent assistance. An agentic orchestration layer built to replace fragmented productivity tools.
 
 **Stop juggling multiple tools.** Eugene learns your life, suggests priorities, balances workload, and helps you stay on top of everything that matters.
 
