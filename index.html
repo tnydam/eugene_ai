@@ -1,13 +1,723 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eugene AI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Eugene AI - AI Task Manager That Actually Learns | Pattern Learning Assistant for Projects & Personal Tasks</title>
+    <meta name="title" content="Eugene AI - AI Task Manager That Actually Learns From You">
+    <meta name="description" content="Eugene AI learns how long YOUR tasks take (not guesses). After 3 completions: 60% → 98% accuracy. Unifies professional projects, personal tasks, family scheduling. Data in YOUR Google Drive. Free tier: 100 tasks, email notifications.">
+    
+    <!-- Keywords for traditional SEO -->
+    <meta name="keywords" content="AI task manager that learns, pattern learning assistant, smart scheduling AI, productivity app that improves, agentic task manager, Google Drive privacy, free task management, professional project manager, personal task organizer">
+    
+    <!-- GEO (Generative Engine Optimization) - Direct Answer Format -->
+    <meta name="ai-content-declaration" content="original">
+    <meta property="product:price:amount" content="0">
+    <meta property="product:price:currency" content="USD">
+    
+    <!-- Canonical -->
+    <meta name="author" content="Virtus Labs">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <link rel="canonical" href="https://eugeneai.tech">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eugeneai.tech">
+    <meta property="og:title" content="Eugene AI - AI Task Manager That Actually Learns From You">
+    <meta property="og:description" content="Pattern learning AI that tracks how long tasks ACTUALLY take. Goes from 60% to 98% accuracy. Professional projects + personal tasks + family scheduling. Data in your Drive.">
+    <meta property="og:image" content="https://eugeneai.tech/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Eugene AI">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://eugeneai.tech">
+    <meta name="twitter:title" content="Eugene AI - Task Manager That Learns From You">
+    <meta name="twitter:description" content="AI that tracks actual task durations. 60% → 98% accuracy after learning. Projects + tasks + scheduling in one system. Data stays in your Drive.">
+    <meta name="twitter:image" content="https://eugeneai.tech/twitter-card.png">
+    <meta name="twitter:creator" content="@eugeneai">
+    
+    <!-- Structured Data for AEO & GEO (Generative Engines) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Eugene AI",
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "Web",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Eugene Lite",
+          "price": "0",
+          "priceCurrency": "USD",
+          "description": "Free forever: 3 business lines, 100 tasks, email notifications, basic pattern learning"
+        },
+        {
+          "@type": "Offer",
+          "name": "Eugene Pro",
+          "price": "9",
+          "priceCurrency": "USD",
+          "billingDuration": "P1M",
+          "description": "Unlimited tasks & business lines, Slack/WhatsApp integrations, advanced analytics, full pattern learning AI"
+        }
+      ],
+      "description": "Eugene AI is an agentic assistant that learns from your actual task completion patterns. After tracking 3+ completions, accuracy improves from 60% to 98%. Unifies professional projects, personal tasks, and family scheduling. All data stored in user's Google Drive for complete privacy.",
+      "url": "https://eugeneai.tech",
+      "author": {
+        "@type": "Organization",
+        "name": "Virtus Labs"
+      },
+      "featureList": [
+        "Pattern Learning AI (learns actual task durations)",
+        "60% to 98% accuracy improvement after 3 completions",
+        "Google Calendar two-way sync",
+        "Apple Calendar integration",
+        "Smart scheduling based on productivity patterns",
+        "Data stored in user's Google Drive (privacy-first)",
+        "Email notifications (all tiers)",
+        "Slack integration (Pro tier)",
+        "WhatsApp notifications (Pro tier)",
+        "Multi-domain coordination (professional + personal + family)"
+      ],
+      "softwareRequirements": "Google account for Drive storage",
+      "screenshot": "https://eugeneai.tech/screenshots/dashboard.png"
+    }
+    </script>
+    
+    <!-- FAQ Schema for AEO & Generative Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What makes Eugene AI different from other task managers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Eugene AI actually learns from you. It tracks how long tasks really take (not your guesses) and when you're most productive. After 3+ completions of similar tasks, accuracy improves from 60% to 98%. Most task managers use static algorithms; Eugene gets smarter with every task you complete. Additionally, all your data stays in YOUR Google Drive, not our servers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Eugene AI's pattern learning work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Eugene records actual task completion times, energy levels, and productivity patterns. After 3 completions: Week 1-3 you estimate 30 min for carousels, but they take 45-50 min. Eugene learns: 'Carousels = 45±5 minutes.' Week 4+: Eugene schedules 45 min at your most productive time (e.g., 9am vs 3pm = 2x faster). Result: 60% accuracy becomes 98% accuracy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where does Eugene AI store my data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All data lives in YOUR Google Drive. Eugene never stores your data on our servers. You have complete ownership, privacy, and can export anytime. No vendor lock-in. This 'user brings their own storage' model enables 99% profit margins while ensuring privacy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Eugene AI free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Eugene Lite is free forever with: 3 business lines, 100 tasks, Google & Apple Calendar sync, email notifications, and basic pattern learning. Eugene Pro ($9/month) includes: unlimited tasks & business lines, Slack integration, WhatsApp notifications, advanced analytics, and full pattern learning AI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is an 'agentic assistant'?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An agentic assistant autonomously executes tasks rather than just assisting. Eugene doesn't just remind you about tasks—it schedules them at optimal times based on learned patterns, coordinates across multiple life domains (professional projects, personal tasks, family scheduling), and continuously improves its understanding of your work patterns."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Eugene AI handle both work and personal tasks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Eugene is designed for multi-domain coordination. It unifies professional projects (like Instagram carousels, client work), personal tasks (grocery shopping, meal planning), and family scheduling (appointments, events) in one intelligent system. This is its key differentiator from single-domain tools like Asana (work only) or Todoist (personal only)."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- How-To Schema for Voice Search & AI Answers -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How Eugene AI Learns Your Task Patterns",
+      "description": "Step-by-step explanation of Eugene AI's pattern learning system",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Complete tasks and Eugene records actual durations",
+          "text": "You create a task (e.g., 'Write Instagram carousel', estimated 30 min). Eugene records it actually took 45 minutes."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pattern recognition after 3+ completions",
+          "text": "After 3 similar tasks, Eugene learns: 'Carousels = 45±5 minutes (not 30)' with 75% confidence."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Smart scheduling based on productivity patterns",
+          "text": "Eugene learns you're 2x faster at carousels at 9am vs 3pm. Future carousels scheduled during peak productivity windows."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Continuous improvement",
+          "text": "Accuracy improves from 60% (using estimates) to 98% (using learned patterns). System gets smarter with every completion."
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .feature-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .pricing-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .pricing-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
-<body>
-  <h1>Welcome to Eugene AI!</h1>
-  <p>Your GitHub Pages site is now live.</p>
+<body class="bg-gray-50">
+    
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 gradient-bg rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">E</span>
+                    </div>
+                    <span class="text-2xl font-bold text-gray-800">Eugene AI</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-purple-600 transition">Features</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-purple-600 transition">Pricing</a>
+                    <a href="#how-it-works" class="text-gray-600 hover:text-purple-600 transition">How It Works</a>
+                    <a href="https://github.com/tatiana-nydam/eugene-ai" target="_blank" class="text-gray-600 hover:text-purple-600 transition">GitHub</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <a href="/app" class="hidden md:block text-purple-600 hover:text-purple-700 font-medium">Sign In</a>
+                    <a href="/app/signup" class="gradient-bg text-white px-6 py-2 rounded-lg hover:opacity-90 transition font-medium">
+                        Get Started Free
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                Your Personal Task<br/>Intellectual System
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-purple-100 max-w-3xl mx-auto">
+                An agentic organizer that unifies your work, tasks, and life. Unifies professional projects, personal tasks, and family scheduling–all in one intelligent system. Your data stays in your Google Drive. 
+                No installation required.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                <a href="/app/signup" class="bg-white text-purple-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition font-bold text-lg shadow-lg">
+                    Start Free →
+                </a>
+                <a href="#how-it-works" class="bg-purple-700 bg-opacity-50 text-white px-8 py-4 rounded-lg hover:bg-opacity-70 transition font-medium text-lg border-2 border-white border-opacity-30">
+                    See How It Works
+                </a>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-6 text-sm text-purple-100">
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Free Forever Plan</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>No Credit Card Required</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Your Data in Your Drive</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                    Why Eugene AI?
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    The only AI task manager that actually learns from you and keeps your data private
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Learns From You</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Eugene tracks how long tasks actually take and when you're most productive. After just 3 completions, it knows your patterns better than you do.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Your Data, Your Drive</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Everything lives in YOUR Google Drive. We never store your data on our servers. Complete privacy and ownership.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Smart Scheduling</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        AI-powered scheduling that considers priority, energy levels, deadlines, and your productivity patterns. Works with Google & Apple Calendar.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Email Notifications</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Daily task digests, deadline reminders, and weekly insights delivered to your inbox. Stay on top of everything effortlessly.
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Pattern Analytics</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        See when you're most productive, how accurate your estimates are, and which tasks take longer than expected. Data-driven insights.
+                    </p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="w-14 h-14 gradient-bg rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Integrations</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Connect Slack, WhatsApp, and other tools (Pro tier). Activate from settings menu. More integrations added regularly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                    How Eugene Learns
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Gets smarter with every task you complete
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-8">
+                    <!-- Step 1 -->
+                    <div class="flex gap-6 items-start">
+                        <div class="flex-shrink-0 w-12 h-12 gradient-bg rounded-full flex items-center justify-center text-white font-bold text-xl">
+                            1
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">You Complete Tasks</h3>
+                            <p class="text-gray-600 text-lg">
+                                Create a task: "Write Instagram carousel" (estimated 30 minutes)
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="flex gap-6 items-start">
+                        <div class="flex-shrink-0 w-12 h-12 gradient-bg rounded-full flex items-center justify-center text-white font-bold text-xl">
+                            2
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Eugene Records Reality</h3>
+                            <p class="text-gray-600 text-lg">
+                                Actually took 45 minutes. Eugene learns: "Carousels = 45 min, not 30"
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="flex gap-6 items-start">
+                        <div class="flex-shrink-0 w-12 h-12 gradient-bg rounded-full flex items-center justify-center text-white font-bold text-xl">
+                            3
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Patterns Emerge</h3>
+                            <p class="text-gray-600 text-lg">
+                                After 3+ completions: "You're 2x faster on carousels at 9am vs 3pm"
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="flex gap-6 items-start">
+                        <div class="flex-shrink-0 w-12 h-12 gradient-bg rounded-full flex items-center justify-center text-white font-bold text-xl">
+                            4
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-2">Eugene Gets Smarter</h3>
+                            <p class="text-gray-600 text-lg">
+                                Next carousel: Schedules 45 minutes at 9am. Actually takes 44 min - almost perfect!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 bg-purple-50 border-2 border-purple-200 rounded-2xl p-8">
+                    <p class="text-lg text-gray-700 mb-4">
+                        <span class="font-bold text-purple-600">Result:</span> Eugene goes from 60% accuracy to 98% accuracy in just a few weeks.
+                    </p>
+                    <p class="text-gray-600">
+                        The only AI task manager that actually learns YOUR patterns, not generic algorithms.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                    Simple, Transparent Pricing
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Start free, upgrade when you need more
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Lite Plan -->
+                <div class="pricing-card bg-white rounded-2xl shadow-lg border-2 border-gray-200 p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Eugene Lite</h3>
+                    <div class="mb-6">
+                        <span class="text-5xl font-bold text-gray-800">$0</span>
+                        <span class="text-gray-600">/forever</span>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-gray-700">3 business lines</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-gray-700">100 tasks</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-gray-700">Google & Apple Calendar sync</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-gray-700">Email notifications</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-gray-700">Pattern learning (basic)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-gray-700">Data in your Google Drive</span>
+                        </li>
+                    </ul>
+                    <a href="/app/signup" class="block w-full text-center bg-gray-200 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-300 transition font-medium">
+                        Get Started Free
+                    </a>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="pricing-card bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl shadow-2xl border-2 border-purple-400 p-8 transform scale-105 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-yellow-400 text-gray-800 px-4 py-1 rounded-full text-sm font-bold">POPULAR</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Eugene Pro</h3>
+                    <div class="mb-6">
+                        <span class="text-5xl font-bold text-white">$9</span>
+                        <span class="text-purple-200">/month</span>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-yellow-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-white font-medium">Everything in Lite, plus:</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-yellow-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-white">Unlimited business lines & tasks</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-yellow-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-white">Advanced analytics & insights</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-yellow-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-white">Full pattern learning AI</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-yellow-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-white">Slack integration</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-yellow-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-white">WhatsApp notifications</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-yellow-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-white">5 team members</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-yellow-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-white">Priority support</span>
+                        </li>
+                    </ul>
+                    <a href="/app/signup?plan=pro" class="block w-full text-center bg-white text-purple-600 px-6 py-3 rounded-lg hover:bg-gray-100 transition font-bold">
+                        Start Pro Trial
+                    </a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card bg-white rounded-2xl shadow-lg border-2 border-gray-200 p-8">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Enterprise</h3>
+                    <div class="mb-6">
+                        <span class="text-5xl font-bold text-gray-800">$49</span>
+                        <span class="text-gray-600">/month</span>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-gray-700 font-medium">Everything in Pro, plus:</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-gray-700">Custom branding</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-gray-700">Unlimited team members</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-gray-700">Advanced permissions</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-gray-700">API access</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-gray-700">White-label option</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-gray-700">Dedicated support</span>
+                        </li>
+                    </ul>
+                    <a href="/app/contact-sales" class="block w-full text-center bg-gray-200 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-300 transition font-medium">
+                        Contact Sales
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                Ready to Get Organized?
+            </h2>
+            <p class="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
+                Start free. No credit card required. Your data stays in your Google Drive.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/app/signup" class="bg-white text-purple-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition font-bold text-lg shadow-lg">
+                    Get Started Free
+                </a>
+                <a href="https://github.com/tatiana-nydam/eugene-ai" target="_blank" class="bg-purple-700 bg-opacity-50 text-white px-8 py-4 rounded-lg hover:bg-opacity-70 transition font-medium text-lg border-2 border-white border-opacity-30">
+                    View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold">E</span>
+                        </div>
+                        <span class="text-xl font-bold text-white">Eugene AI</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Your agentic orchestration layer
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="hover:text-white transition">Features</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition">Pricing</a></li>
+                        <li><a href="/app" class="hover:text-white transition">Sign In</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://github.com/tatiana-nydam/eugene-ai" class="hover:text-white transition">GitHub</a></li>
+                        <li><a href="/docs" class="hover:text-white transition">Documentation</a></li>
+                        <li><a href="/blog" class="hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/about" class="hover:text-white transition">About</a></li>
+                        <li><a href="/privacy" class="hover:text-white transition">Privacy</a></li>
+                        <li><a href="/terms" class="hover:text-white transition">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>&copy; 2026 Eugene AI by Virtus Labs. Your data, your Drive.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
-
