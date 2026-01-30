@@ -12,24 +12,25 @@ const queryClient = new QueryClient()
 
 function App() {
   const { user } = useUserStore()
-  
+
   return (
     <QueryClientProvider client={queryClient}>
       <HashRouter>
         <Routes>
-          {/* Public routes */}
-          <Route path="/login" element={<Login />} />
+          {/* Public routes - anyone can access */}
+          <Route path="/" element={user ? <Navigate to="/dashboard" /> : <LandingPage />} />
+          <Route path="/login" element={user ? <Navigate to="/dashboard" /> : <Login />} />
           
-          {/* Protected routes */}
-          {user ? (
+          {/* Protected routes - only logged in users */}
+          {user && (
             <Route element={<Layout />}>
-              <Route path="/" element={user ? <Dashboard /> : <LandingPage />} />
+              <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/settings" element={<Settings />} />
-              <Route path="*" element={<Navigate to="/" replace />} />
             </Route>
-          ) : (
-            <Route path="*" element={<Navigate to="/login" replace />} />
           )}
+          
+          {/* Catch-all redirect */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </HashRouter>
     </QueryClientProvider>
