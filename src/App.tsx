@@ -2,6 +2,7 @@ import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { useUserStore } from '@/stores/userStore'
 import { Dashboard } from '@/pages/Dashboard'
+import { LandingPage } from '@/pages/LandingPage'
 import { Settings } from '@/pages/Settings'
 import { Login } from '@/pages/Login'
 import { Layout } from '@/components/Layout'
@@ -22,7 +23,7 @@ function App() {
           {/* Protected routes */}
           {user ? (
             <Route element={<Layout />}>
-              <Route path="/" element={<Dashboard />} />
+              <Route path="/" element={user ? <Dashboard /> : <LandingPage />} />
               <Route path="/settings" element={<Settings />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Route>
