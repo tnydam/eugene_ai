@@ -33,6 +33,9 @@ jobs:
         
       - name: Build React app
         run: npm run build
+
+      - name: Add .nojekyll to dist
+        run: touch dist/.nojekyll
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
